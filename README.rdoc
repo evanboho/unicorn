@@ -6,7 +6,7 @@ advantage of features in Unix/Unix-like kernels.  Slow clients should
 only be served by placing a reverse proxy capable of fully buffering
 both the the request and response in between \Unicorn and slow clients.
 
-== Features
+=== Features
 
 * Designed for Rack, Unix, fast clients, and ease-of-debugging.  We
   cut out everything that is better supported by the operating system,
@@ -57,7 +57,7 @@ both the the request and response in between \Unicorn and slow clients.
   notification to be implemented as well as being able to tunnel
   arbitrary stream-based protocols over HTTP.
 
-== License
+=== License
 
 \Unicorn is copyright 2009 by all contributors (see logs in git).
 It is based on Mongrel 1.1.5.
@@ -69,7 +69,7 @@ See the included LICENSE file for details.
 
 \Unicorn is 100% Free Software.
 
-== Install
+=== Install
 
 The library consists of a C extension so you'll need a C compiler
 and Ruby development libraries/headers.
@@ -93,15 +93,15 @@ tarballs here:
 See the HACKING guide on how to contribute and build prerelease gems
 from git.
 
-== Usage
+=== Usage
 
-=== non-Rails Rack applications
+==== non-Rails Rack applications
 
 In APP_ROOT, run:
 
   unicorn
 
-=== for Rails applications (should work for all 1.2 or later versions)
+==== for Rails applications (should work for all 1.2 or later versions)
 
 In RAILS_ROOT, run:
 
@@ -111,7 +111,7 @@ In RAILS_ROOT, run:
 You may use the +--listen/-l+ switch to bind to a different
 address:port or a UNIX socket.
 
-=== Configuration File(s)
+==== Configuration File(s)
 
 \Unicorn will look for the config.ru file used by rackup in APP_ROOT.
 
@@ -125,7 +125,7 @@ Most command-line options for other Rack applications (above) are also
 supported.  Run `unicorn -h` or `unicorn_rails -h` to see command-line
 options.
 
-== Disclaimer
+=== Disclaimer
 
 There is NO WARRANTY whatsoever if anything goes wrong, but
 {let us know}[link:ISSUES.html] and we'll try our best to fix it.
@@ -134,7 +134,7 @@ There is NO WARRANTY whatsoever if anything goes wrong, but
 or a fast LAN.  See the PHILOSOPHY and DESIGN documents for more details
 regarding this.
 
-== Contact
+=== Contact
 
 All feedback (bug reports, user/development dicussion, patches, pull
 requests) go to the mailing list/newsgroup.  See the ISSUES document for
